@@ -19,7 +19,7 @@ public class MaximumTest<T extends Comparable<T>> {
         if (z.compareTo(max) > 0){
             max = z;
         }
-         System.out.printf("Max of %s, %s and %s is %s\n",x,y,z,max);
+        printMax(x, y, z, max);
         return max;
     }
     public static String testMaxString(String x, String y, String z){
@@ -30,8 +30,11 @@ public class MaximumTest<T extends Comparable<T>> {
         if (z.compareTo(max) > 0){
             max = z;
         }
-        System.out.printf("Max of %s, %s and %s is %s\n",x,y,z,max);
+        printMax(x, y, z, max);
         return max;
+    }
+    public static <T> void printMax(T x,T y,T z, T max){
+        System.out.printf("Max of %s, %s and %s is %s\n",x,y,z,max);
     }
 
     public static void main(String[] args) {
