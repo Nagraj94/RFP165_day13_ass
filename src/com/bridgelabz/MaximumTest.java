@@ -24,7 +24,7 @@ public class MaximumTest<T extends Comparable<T>> {
     }
 
     public static void main(String[] args) {
-        Integer xInt = 3, yInt = 4, zInt = 5;
+        Integer xInt = 5, yInt = 4, zInt = 3;
 
         new MaximumTest(xInt, yInt, zInt).maximum();
     }
